@@ -4,6 +4,49 @@
     <meta charset="utf-8">
     <title>立方体をWebARで表示</title>
 
+  </head>
+  <body>
+
+    
+    <!-- model-viewerのJSファイルを取り込む -->
+    <script
+      type="module"
+      src = "./model-viewer_code.js">
+
+      //
+      //CDNによりmodel-viewerを取り込む
+      // src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+
+      // >
+
+    </script>
+
+
+
+
+
+    <model-viewer
+    ar
+    alt="cube"
+    src="cube.glb"
+    ios-src="cube_red.usdz"
+
+    style="width:800px;height:1000px;"
+
+    background-color="#70BCD1"
+    shadow-intensity="0.7"
+    camera-controls
+    interaction-prompt="auto"
+    auto-rotate ar magic-leap>
+
+    <!--cube.glbは白色の立方体、cube_red.usdzは赤色の立方体-->
+    
+    </model-viewer>
+
+
+
+
+
 
 
 
@@ -174,64 +217,6 @@
         });
       });
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </head>
-  <body>
-
-    
-    <!-- model-viewerのJSファイルを取り込む -->
-    <script
-      type="module"
-      src = "./model-viewer_code.js">
-
-      //
-      //CDNによりmodel-viewerを取り込む
-      // src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
-
-      // >
-
-    </script>
-
-
-
-
-
-    <model-viewer
-    ar
-    alt="cube"
-    src="cube.glb"
-    ios-src="cube_red.usdz"
-
-    style="width:800px;height:1000px;"
-
-    background-color="#70BCD1"
-    shadow-intensity="0.7"
-    camera-controls
-    interaction-prompt="auto"
-    auto-rotate ar magic-leap>
-
-    <!--cube.glbは白色の立方体、cube_red.usdzは赤色の立方体-->
-    
-    </model-viewer>
-
 
 
 
